@@ -1,145 +1,159 @@
 # 🛰️ AstroHealth AI
 ### Intelligent Astronaut Health Monitoring & Mission Control System
 
-**An AI-powered health-monitoring platform designed to explore physiological telemetry, detect unusual health patterns, and support astronaut health monitoring during space missions.**
+**An AI-powered prototype exploring how machine learning and data analytics can support astronaut physiological monitoring during space missions.**
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
   <img src="https://img.shields.io/badge/Machine%20Learning-Isolation%20Forest-8A63D2?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Status-Working%20Prototype-28A745?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Project-Research%20Prototype-28A745?style=for-the-badge" />
 </p>
 
 ---
 
-## 🌌 Project Overview
+## 🌌 About the Project
 
-Space exploration presents unique challenges to human health. Astronauts operating in microgravity, isolation, and confined environments require effective ways to monitor physiological changes and recognize unusual patterns.
+Human space exploration introduces complex health-monitoring challenges. Microgravity, isolation, confinement, and other spaceflight conditions can influence astronauts' physiological well-being.
 
-**AstroHealth AI** explores how artificial intelligence and interactive data analytics can contribute to astronaut health monitoring.
+**AstroHealth AI** is an intelligent monitoring dashboard developed to explore the application of artificial intelligence in astronaut health monitoring.
 
-The platform combines physiological telemetry, machine-learning-based anomaly detection, monitoring alerts, and interactive visualizations in a unified mission-control dashboard.
+The platform combines physiological telemetry, machine-learning-based anomaly detection, interactive visualizations, and monitoring alerts in a unified mission-control environment.
 
-Developed as a software prototype in response to the **NASA Space Apps Challenge 2026** challenge:
+The project was developed in response to the NASA Space Apps Challenge 2026 challenge:
 
-*Create Health Monitoring Software for Astronauts on Space Missions.*
+**Create Health Monitoring Software for Astronauts on Space Missions.**
 
 ---
 
-## 🖥️ Application Preview
+## 🖥️ Application Screenshots
 
-AstroHealth AI features six integrated dashboard sections, each designed for a different aspect of astronaut health monitoring.
+AstroHealth AI contains six integrated dashboard modules.
 
 ### 01 — Mission Overview
 
-The central mission-control interface provides an overview of astronaut information, physiological measurements, monitoring statistics, and system status.
+A centralized mission-control dashboard featuring astronaut information, monitoring statistics, physiological indicators, and telemetry visualizations.
 
-![Mission Overview](assets/AstroHealthAI ss1.png)
+![AstroHealth AI Mission Overview](assets/AstroHealthAI%20ss1.png)
 
 ### 02 — Health Monitoring
 
-Explore seven physiological indicators through interactive charts, historical measurements, and configured reference-range comparisons.
+Interactive monitoring of seven physiological indicators, with historical trends, statistical summaries, and configured reference-range comparisons.
 
-![Health Monitoring](assets/AstroHealthAI ss2.png)
+![AstroHealth AI Health Monitoring](assets/AstroHealthAI%20ss2.png)
 
 ### 03 — AI Intelligence
 
-The machine-learning module applies the Isolation Forest algorithm to identify statistically unusual physiological observations and display anomaly scores.
+Machine-learning anomaly detection using Isolation Forest, with unusual observation identification, anomaly scoring, and visual analysis.
 
-![AI Intelligence](assets/AstroHealthAI ss3.png)
+![AstroHealth AI Intelligence](assets/AstroHealthAI%20ss3.png)
 
 ### 04 — Alert Command
 
-A centralized alert interface for reviewing configured reference-range deviations, recommended verification actions, and persistent alert history.
+A dedicated monitoring interface for configured reference-range deviations, recommended verification actions, and persistent alert history.
 
-![Alert Command](assets/AstroHealthAI ss4.png)
+![AstroHealth AI Alert Command](assets/AstroHealthAI%20ss4.png)
 
 ### 05 — Analytics Laboratory
 
-Explore physiological relationships through correlation heatmaps, statistical distributions, descriptive statistics, and experimental trend projections.
+Advanced data exploration featuring physiological correlation heatmaps, distribution analysis, descriptive statistics, and experimental trend projections.
 
-![Analytics Laboratory](assets/AstroHealthAI ss5.png)
+![AstroHealth AI Analytics Laboratory](assets/AstroHealthAI%20ss5.png)
 
 ### 06 — Data Command
 
-Import and validate CSV datasets, export physiological telemetry, generate mission reports, and manage demonstration data.
+A data-management environment supporting CSV uploads, dataset validation, telemetry exports, and downloadable mission reports.
 
-![Data Command](assets/AstroHealthAI ss6.png)
+![AstroHealth AI Data Command](assets/AstroHealthAI%20ss6.png)
 
 ---
 
-## ✨ Core Features
+## 🎯 Problem Statement
 
-| Feature | Description |
-|---|---|
-| Mission Control Dashboard | Unified astronaut monitoring interface |
-| Physiological Monitoring | Seven health-related indicators |
-| AI Anomaly Detection | Unsupervised Isolation Forest model |
-| Anomaly Scoring | Statistical unusualness analysis |
-| Alert Management | Monitoring alerts and verification recommendations |
-| Data Visualization | Interactive Plotly charts |
-| Correlation Analysis | Physiological indicator heatmap |
-| Trend Projection | Experimental linear trend analysis |
-| CSV Integration | Upload, validate, and export datasets |
-| Alert Database | SQLite-based persistent alert history |
-| Mission Reports | Downloadable monitoring summaries |
+Astronauts undertaking extended space missions require reliable approaches to monitoring physiological observations and identifying unusual changes.
+
+Conventional data collection alone does not necessarily provide an accessible way to explore relationships, identify statistically unusual observations, and organize monitoring information.
+
+AstroHealth AI explores a software-based approach that combines data visualization and machine learning to support the interpretation of physiological telemetry.
+
+## 💡 Proposed Solution
+
+The platform brings together six complementary capabilities:
+
+1. Mission overview and astronaut monitoring.
+2. Physiological indicator analysis.
+3. Unsupervised machine-learning anomaly detection.
+4. Monitoring alerts and verification recommendations.
+5. Statistical and experimental trend analysis.
+6. Data management and report generation.
 
 ## 🧠 Artificial Intelligence Methodology
 
-AstroHealth AI uses **Isolation Forest**, an unsupervised machine-learning algorithm, to identify unusual patterns in physiological observations.
+The core anomaly-detection component uses **Isolation Forest**, an unsupervised machine-learning algorithm.
 
-Unlike traditional supervised classification, Isolation Forest can identify statistical anomalies without requiring a labelled dataset for training.
+Isolation Forest identifies observations that are statistically unusual compared with the patterns represented in the dataset.
 
-### Processing Pipeline
+### Processing Workflow
 
 ```text
-       PHYSIOLOGICAL TELEMETRY
-                  |
-                  ▼
+      PHYSIOLOGICAL TELEMETRY
+                 |
+                 ▼
           DATA VALIDATION
-                  |
-                  ▼
-        FEATURE PREPARATION
-                  |
-                  ▼
-         ISOLATION FOREST
-                  |
-                  ▼
+                 |
+                 ▼
+         FEATURE PROCESSING
+                 |
+                 ▼
+          ISOLATION FOREST
+                 |
+                 ▼
         ANOMALY IDENTIFICATION
-                  |
-                  ▼
-         ALERT GENERATION
-                  |
-                  ▼
+                 |
+                 ▼
+        MONITORING ALERTS
+                 |
+                 ▼
        INTERACTIVE ANALYTICS
-                  |
-                  ▼
+                 |
+                 ▼
           MISSION CONTROL
 ```
 
-### Monitored Indicators
+### Physiological Indicators
 
-1. Heart rate (bpm)
-2. Blood oxygen saturation (%)
-3. Body temperature (°C)
-4. Respiration rate (breaths/min)
-5. Systolic blood pressure (mmHg)
-6. Diastolic blood pressure (mmHg)
-7. Activity level (%)
+| Indicator | Measurement |
+|---|---|
+| Heart Rate | Beats per minute |
+| Blood Oxygen | Percentage |
+| Body Temperature | Celsius |
+| Respiration | Breaths per minute |
+| Systolic Pressure | mmHg |
+| Diastolic Pressure | mmHg |
+| Activity Level | Percentage |
 
-The platform also calculates anomaly scores and displays unusual observations for further review.
+The platform also calculates anomaly scores to help users explore the degree of statistical unusualness in individual observations.
+
+## ✨ Key Features
+
+| Module | Capabilities |
+|---|---|
+| Mission Overview | Astronaut profile, telemetry overview, KPI cards |
+| Health Monitoring | Seven indicators, interactive charts, range comparisons |
+| AI Intelligence | Isolation Forest, anomaly scores, flagged observations |
+| Alert Command | Monitoring alerts, recommendations, SQLite history |
+| Analytics Laboratory | Correlation heatmaps, distributions, trend projections |
+| Data Command | CSV upload, validation, exports, mission reports |
 
 ## 🛠️ Technology Stack
 
-| Technology | Application |
-|---|---|
-| Python | Core programming language |
-| Streamlit | Interactive web dashboard |
-| Pandas | Data processing and manipulation |
-| NumPy | Numerical computation |
-| Scikit-learn | Machine-learning anomaly detection |
-| Plotly | Interactive data visualization |
-| SQLite | Alert history and data persistence |
+- **Python** — Core application development.
+- **Streamlit** — Interactive mission-control dashboard.
+- **Pandas** — Data manipulation and processing.
+- **NumPy** — Numerical computation.
+- **Scikit-learn** — Machine-learning anomaly detection.
+- **Plotly** — Interactive data visualizations.
+- **SQLite** — Persistent alert history.
 
 ## 🏗️ Project Architecture
 
@@ -152,12 +166,12 @@ AstroHealthAI/
 ├── README.md
 │
 ├── assets/
-│   ├── mission-overview.png
-│   ├── health-monitoring.png
-│   ├── ai-intelligence.png
-│   ├── alert-command.png
-│   ├── analytics-laboratory.png
-│   └── data-command.png
+│   ├── AstroHealthAI ss1.png
+│   ├── AstroHealthAI ss2.png
+│   ├── AstroHealthAI ss3.png
+│   ├── AstroHealthAI ss4.png
+│   ├── AstroHealthAI ss5.png
+│   └── AstroHealthAI ss6.png
 │
 ├── data/
 │
@@ -173,9 +187,7 @@ AstroHealthAI/
     └── config.toml
 ```
 
-## 🚀 Installation and Local Setup
-
-Follow these instructions to run AstroHealth AI on your computer.
+## 🚀 Installation and Setup
 
 ### 1. Clone the repository
 
@@ -192,31 +204,31 @@ python -m venv .venv
 
 ### 3. Activate the environment
 
-For Windows PowerShell:
+Windows PowerShell:
 
 ```powershell
 .venv\Scripts\Activate.ps1
 ```
 
-### 4. Install the dependencies
+### 4. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 5. Launch the application
+### 5. Run AstroHealth AI
 
 ```bash
 python -m streamlit run app.py
 ```
 
-Open the local URL displayed in your terminal.
+The application will provide a local URL in the terminal.
 
-## 📊 Data and Demonstration Environment
+## 📊 Data Handling
 
-The current prototype generates synthetic physiological telemetry for demonstration and testing.
+The application generates synthetic physiological telemetry for demonstration and testing.
 
-Users can also upload their own CSV datasets, provided they contain the required columns:
+It also supports CSV uploads containing the following required columns:
 
 ```text
 timestamp
@@ -229,40 +241,43 @@ diastolic
 activity
 ```
 
-The imported observations are validated and processed before being displayed in the dashboard.
+Uploaded data is validated and processed before being used in the monitoring interface.
 
 ## 🔬 Innovation and Potential Impact
 
-AstroHealth AI explores the potential of combining machine learning and interactive monitoring in a spaceflight health-monitoring environment.
+AstroHealth AI explores the potential of combining machine learning, physiological monitoring, and interactive analytics in a single software environment.
 
-Its main contribution is the integration of several capabilities into one application:
+Its central idea is to make physiological observations easier to explore while highlighting statistically unusual patterns that may warrant further review.
 
-- Physiological data visualization.
-- Unsupervised anomaly identification.
-- Monitoring alerts and verification recommendations.
-- Statistical analysis of physiological observations.
-- Data import and report generation.
+Potential applications include:
 
-The concept could be extended through validated astronaut health datasets, personalized physiological baselines, and integration with appropriate spaceflight monitoring systems.
+- Supporting the organization of astronaut health observations.
+- Making physiological trends easier to interpret.
+- Highlighting unusual data patterns for further investigation.
+- Exploring AI-assisted monitoring workflows.
+- Supporting future research into intelligent space-health software.
 
 ## 🔭 Future Development
 
-Potential future improvements include:
+Future development opportunities include:
 
-- Integration with relevant real-world astronaut health datasets.
-- More advanced personalized anomaly detection.
-- Improved anomaly explanations and alert prioritization.
-- Offline-first operation for limited-connectivity environments.
-- Additional environmental and behavioral monitoring.
-- Validation with medical and aerospace domain experts.
+- Integration with relevant validated astronaut health datasets.
+- Personalized physiological baseline modelling.
+- More advanced anomaly explanation techniques.
+- Improved alert prioritization.
+- Offline-first capabilities for space environments.
+- Integration of additional environmental monitoring indicators.
+- Validation with aerospace and medical experts.
 
-## ⚠️ Important Disclaimer
+## ⚠️ Limitations and Disclaimer
 
 AstroHealth AI is an educational and research prototype.
 
-The default application uses synthetic demonstration data rather than actual NASA astronaut medical records or live mission telemetry.
+The current application uses synthetic demonstration telemetry by default. It is not connected to live NASA mission systems or actual astronaut medical records.
 
-Its reference ranges, demonstration health score, anomaly detection outputs, and experimental projections are not clinically validated. The application does not diagnose medical conditions and is not intended to replace professional medical assessment or established astronaut healthcare procedures.
+Its reference ranges, demonstration health score, anomaly detection outputs, and experimental trend projections are not clinically validated.
+
+The application does not diagnose medical conditions and is not intended to replace professional medical assessment or established astronaut healthcare procedures.
 
 ## 🏆 NASA Space Apps Challenge 2026
 
@@ -270,7 +285,7 @@ Its reference ranges, demonstration health score, anomaly detection outputs, and
 
 Official website: https://www.spaceappschallenge.org/
 
-AstroHealth AI demonstrates a potential software approach to physiological monitoring and unusual-pattern identification in the context of human space exploration.
+AstroHealth AI demonstrates an exploratory approach to AI-assisted physiological monitoring and unusual-pattern identification in the context of human space exploration.
 
 ## 👩‍💻 Developer
 
@@ -278,11 +293,11 @@ AstroHealth AI demonstrates a potential software approach to physiological monit
 
 Project concept, software development, dashboard implementation, machine-learning integration, and technical documentation.
 
-### Project Links
+## 🔗 Project Links
 
 - **GitHub Repository:** https://github.com/ab9eha/AstroHealth_AI.git
-- **Live Streamlit Application:** https://astrohealthai1.streamlit.app/
-- **NASA Space Apps Challenge:** https://www.spaceappschallenge.org/
+- **Live Application:** https://astrohealthai1.streamlit.app/
+- **NASA Space Apps:** https://www.spaceappschallenge.org/
 
 ---
 
