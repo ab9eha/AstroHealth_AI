@@ -192,8 +192,8 @@ AstroHealthAI/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/AstroHealth-AI.git
-cd AstroHealth-AI
+git clone https://github.com/ab9eha/AstroHealth_AI.git
+cd AstroHealth_AI
 ```
 
 ### 2. Create a virtual environment
